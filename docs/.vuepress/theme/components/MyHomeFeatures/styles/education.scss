@@ -44,21 +44,12 @@
     .major,
     .college,
     .school {
-        font-size: 1rem;
+        font-size: 0.8rem;
         width: 100%;
         transition: all 0.5s ease;
     }
     // .school{font-weight: 800;}
-    .major::marker{
-        content: '🎓';
-    }
-    .college::marker{
-        content: '🏫';
-
-    }
-    .school::marker{
-        content: '📍';
-    }
+    // .major::before{ content: '🎓'; }
 
     transition: all 0.5s ease;
 }

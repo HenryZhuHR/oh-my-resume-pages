@@ -43,7 +43,7 @@ educations:
     school: Wuhan University, China
     school_link: https://www.whu.edu.cn
 
-footer: MIT Licensed | Copyright © 2018-present Evan You
+footer: MIT Licensed | Copyright © 2022-present Ghua
 ---
 
 # Hello VuePress

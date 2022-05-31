@@ -26,9 +26,9 @@ const educations = computed(() => {
         <p class="edutext degree">{{ education.degree }}</p>
       </div>
       <div class="major-school">
-        <li class="edutext major">&nbsp;{{ education.major }}</li>
-        <li class="edutext college">&nbsp;{{ education.college }}</li>
-        <li class="edutext school">&nbsp;{{ education.school }}</li>
+        <div class="edutext major">🎓&nbsp;{{ education.major }}</div>
+        <div class="edutext college">🏫&nbsp;{{ education.college }}</div>
+        <div class="edutext school">📍&nbsp;{{ education.school }}</div>
       </div>
 
     </a>
