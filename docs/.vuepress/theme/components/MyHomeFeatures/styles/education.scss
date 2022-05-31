@@ -1,0 +1,98 @@
+.educations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.education {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+
+.education p {
+    margin: 0;
+}
+
+
+.education .year-degree {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+}
+
+
+
+.education {
+    background-color: var(--c-brand-dark);
+    color: var(--c-text);
+
+    .year,
+    .degree {
+        display: flex;
+        align-items: flex-end;
+        font-size: 1.1rem;
+        line-height: 1.1;
+        font-weight: bold;
+        margin-right: 10px;
+        transition: all 0.5s ease;
+    }
+
+    .major,
+    .college,
+    .school {
+        font-size: 0.8rem;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+    .major::marker{
+        content: '🎓';
+    }
+    .college::marker{
+        content: '🏫';
+
+    }
+    .school::marker{
+        content: '📍';
+    }
+
+    transition: all 0.5s ease;
+}
+
+.education:hover {
+    background-color: var(--c-brand-light);
+    transition: all 0.5s ease;
+
+    .year,
+    .degree {
+        color: white;
+        transition: all 0.5s ease;
+    }
+    .year,.degree{
+        font-size: 1.3rem;
+    }
+
+    .edutext {
+        color: white;
+        margin-top: 5px;
+        transition: all 0.5s ease;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .educations {
+        display: flex;
+        flex-direction: column;
+    }
+    .education {
+        padding: 5px;
+        padding-left: 15px;
+        margin: 5px;
+        border-radius: 5px;
+        width: 90%;
+    }
+}
