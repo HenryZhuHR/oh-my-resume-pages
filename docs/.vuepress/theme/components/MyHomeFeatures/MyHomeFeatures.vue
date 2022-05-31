@@ -16,13 +16,7 @@ const educations = computed(() => {
 </script>
 
 <template>
-  <!-- year: 2014
-    degree: Ph.D.
-    major: Information Engineering
-    college: School of Electrical and Electronic Engineering
-    school: Nanyang Technological University, Singapore
-    school_link: https://www.ntu.edu.sg -->
-  <div v-if="educations.length" class="title">Education</div>
+  <div v-if="educations.length" class="title"> Education </div>
   <div v-if="educations.length" class="educations">
     <a v-for="education in educations" :key="education.year" class="education" :href="education.school_link"
       target="_blank">
