@@ -2,6 +2,7 @@
 home: true
 title: Home
 heroImage: /images/hero.png
+name: 华光
 actions:
   - text: Get Started
     link: /guide/getting-started.html
@@ -9,19 +10,6 @@ actions:
   - text: Introduction
     link: /guide/
     type: secondary
-features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site. 
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
 
 educations:
   - year: 2014
@@ -46,4 +34,44 @@ educations:
 footer: MIT Licensed | Copyright © 2022-present Ghua
 ---
 
-# Hello VuePress
+## Experience
+<div class="experience">
+  <span class="time"> Oct. 2020–Oct. 2021 </span>
+  <span class="work"> International Scholar Exchange Fellow </span>
+  <p class="brief">
+    Multimedia Security Lab, Yonsei University, South Korea, Sponsored by Chey Institute for Advanced Studies
+  </p>
+</div>
+
+<div class="experience">
+  <span class="time"> Apr. 2017–Present </span>
+  <span class="work"> Associate Professor </span>
+  <p class="brief">
+    School of Electronic Information, Wuhan University, China
+  </p>
+</div>
+
+<div class="experience">
+  <span class="time"> Dec. 2015–Dec. 2016 </span>
+  <span class="work"> Research Fellow, INFINITUS </span>
+  <p class="brief">
+    School of Electrical and Electronic Engineering, Nanyang Technological University, Singapore
+  </p>
+</div>
+
+<div class="experience">
+  <span class="time"> Jul. 2013–Nov. 2015 </span>
+  <span class="work"> Scientist I </span>
+  <p class="brief">
+    Multimedia Forensics & Security Lab, Institute for Infocomm Research, A*Star, Singapore
+  </p>
+</div>
+
+
+## Selected Publication (*Corresponding Author)
+
+### Book/Book Chapter <!-- 不要修改此标题  -->
+
+- 华光. 电网频率取证[M]//多媒体与人工智能安全研究极简综述: 第二十四章. 上海: 复旦大学出版社, 2021: 254–264.
+- B. Yan, Y. Xiang, and G. Hua, Improving Image Quality in Visual Cryptography, Springer, 2019.
+- Y. Xiang, G. Hua, and B. Yan, Digital Audio Watermarking–Fundamentals, Techniques and Challenges, Springer, 2017.

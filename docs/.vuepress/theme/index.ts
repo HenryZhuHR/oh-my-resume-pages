@@ -16,8 +16,8 @@ export const localTheme = (options: DefaultThemeOptions): Theme => {
     // 组件替换 https://v2.vuepress.vuejs.org/zh/reference/default-theme/extending.html#组件替换
     // 组件列表 https://github.com/vuepress/vuepress-next/tree/main/packages/%40vuepress/theme-default/src/client/components
     alias: {
-      '@theme/HomeFooter.vue': path.resolve(__dirname, './components/MyHomeFooter.vue'),
-      '@theme/HomeFeatures.vue': path.resolve(__dirname, './components/MyHomeFeatures/MyHomeFeatures.vue'),
+      '@theme/HomeFeatures.vue': path.resolve(__dirname, './components/ResumeHomeFeatures/ResumeHomeFeatures.vue'),
+      '@theme/HomeContent.vue': path.resolve(__dirname, './components/ResumeHomeContent/ResumeHomeContent.vue'),
     },
   }
 }

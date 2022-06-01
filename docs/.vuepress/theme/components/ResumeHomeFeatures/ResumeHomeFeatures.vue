@@ -2,9 +2,9 @@
 import { isArray } from '@vuepress/shared'
 import { computed } from 'vue'
 import { usePageFrontmatter } from '@vuepress/client'
-import { MyThemeHomePageFrontmatter } from './MyThemeHomePageFrontmatter'
+import { ResumeThemeHomePageFrontmatter } from './ResumeHomeFeatures'
 
-const frontmatter = usePageFrontmatter<MyThemeHomePageFrontmatter>()
+const frontmatter = usePageFrontmatter<ResumeThemeHomePageFrontmatter>()
 const educations = computed(() => {
   console.log(frontmatter.value);
   if (isArray(frontmatter.value.educations)) {

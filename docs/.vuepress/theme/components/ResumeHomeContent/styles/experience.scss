@@ -1,0 +1,16 @@
+.experience::before {
+    content: '📝';
+}
+
+.experience .time,
+.experience .work {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.experience p{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: var(--c-text-lightest);
+}
