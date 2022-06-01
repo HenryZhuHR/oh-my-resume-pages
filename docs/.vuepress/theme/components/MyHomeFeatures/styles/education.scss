@@ -1,3 +1,6 @@
+$MobileWidth: 768px;
+// border-bottom: 1px solid #eee; 底部横线
+
 .educations {
     display: flex;
     flex-direction: row;
@@ -22,6 +25,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: left;
+    border-bottom: 1px solid var(--c-bg-lighter);
 }
 
 
@@ -38,7 +42,7 @@
         line-height: 1.1;
         font-weight: bold;
         margin-right: 10px;
-        transition: all 0.5s ease;
+        transition: var(--t-transform);
     }
 
     .major,
@@ -46,45 +50,80 @@
     .school {
         font-size: 0.8rem;
         width: 100%;
-        transition: all 0.5s ease;
+        transition: var(--t-transform);
     }
+
     // .school{font-weight: 800;}
     // .major::before{ content: '🎓'; }
 
-    transition: all 0.5s ease;
+    transition: var(--t-transform);
 }
 
-.education:hover {
-    background-color: var(--c-brand-light);
-    transition: all 0.5s ease;
-
-    .year,
-    .degree {
-        color: white;
-        transition: all 0.5s ease;
-    }
-    .year,.degree{
-        font-size: 1.3rem;
-    }
-
-    .edutext {
-        color: white;
-        margin-top: 5px;
-        transition: all 0.5s ease;
-    }
-}
-
-
-@media screen and (max-width: 768px) {
+// 媒体查询
+@media screen and (max-width: $MobileWidth) {
     .educations {
         display: flex;
         flex-direction: column;
     }
+
     .education {
         padding: 5px;
         padding-left: 15px;
         margin: 5px;
         border-radius: 5px;
         width: 90%;
+    }
+
+    // 字体相关
+    .education {
+        .edutext{
+            line-height: 1.3;
+            letter-spacing: 0.6px;
+        }
+
+        .year,
+        .degree {
+            font-size: 1.2rem;
+            transition: var(--t-transform);
+        }
+
+        .major,
+        .college,
+        .school {
+            font-size: 1rem;
+            width: 100%;
+            transition: var(--t-transform);
+        }
+    }
+
+}
+
+
+
+// 动画
+.education:hover {
+    background-color: var(--c-brand-light);
+    transition: var(--t-transform);
+
+    .year,
+    .degree {
+        color: white;
+        transition: var(--t-transform);
+    }
+
+    .year,
+    .degree {
+        font-size: 1.3rem;
+    }
+
+    .edutext {
+        color: white;
+        margin-top: 5px;
+        transition: var(--t-color);
+    }
+
+    .school {
+        color: var(--c-bg-light);
+        transition: var(--t-color);
     }
 }

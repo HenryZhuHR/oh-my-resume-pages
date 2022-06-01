@@ -18,8 +18,7 @@ const educations = computed(() => {
 <template>
   <div v-if="educations.length" class="title"> Education </div>
   <div v-if="educations.length" class="educations">
-    <a v-for="education in educations" :key="education.year" class="education" :href="education.school_link"
-      target="_blank">
+    <div v-for="education in educations" :key="education.year" class="education" >
 
       <div class="year-degree">
         <p class="edutext year">{{ education.year }}</p>
@@ -28,10 +27,9 @@ const educations = computed(() => {
       <div class="major-school">
         <div class="edutext major">🎓&nbsp;{{ education.major }}</div>
         <div class="edutext college">🏫&nbsp;{{ education.college }}</div>
-        <div class="edutext school">📍&nbsp;{{ education.school }}</div>
+        <a class="edutext school" :href="education.school_link" target="_blank">📍&nbsp;{{ education.school }}</a>
       </div>
-
-    </a>
+    </div>
   </div>
 </template>
 
