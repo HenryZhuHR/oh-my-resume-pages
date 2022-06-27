@@ -6,9 +6,9 @@ import { ResumeThemeHomePageFrontmatter } from './ResumeHomeFeatures'
 
 const frontmatter = usePageFrontmatter<ResumeThemeHomePageFrontmatter>()
 const educations = computed(() => {
-  console.log(frontmatter.value);
+  // console.log(frontmatter.value);
   if (isArray(frontmatter.value.educations)) {
-    console.log(frontmatter.value.educations);
+    // console.log(frontmatter.value.educations);
     return frontmatter.value.educations
   }
   return []

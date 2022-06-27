@@ -2,7 +2,8 @@
 home: true
 title: Home
 heroImage: /images/hero.png
-name: 华光
+name: Hua, Guang
+cn_name: 华光
 actions:
   - text: Get Started
     link: /guide/getting-started.html
@@ -71,6 +72,7 @@ footer: MIT Licensed | Copyright © 2022-present Ghua
 ## Selected Publication (*Corresponding Author)
 
 ### Book/Book Chapter <!-- 不要修改此标题  -->
+
 
 - 华光. 电网频率取证[M]//多媒体与人工智能安全研究极简综述: 第二十四章. 上海: 复旦大学出版社, 2021: 254–264.
 - B. Yan, Y. Xiang, and G. Hua, Improving Image Quality in Visual Cryptography, Springer, 2019.

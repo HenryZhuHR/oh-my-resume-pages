@@ -3,6 +3,8 @@ import type { DefaultThemeHomePageFrontmatter } from '@vuepress/theme-default/li
 
 /* 继承默认的 Frontmatter */
 export interface ResumeThemeHomePageFrontmatter extends DefaultThemeHomePageFrontmatter {
+    name: string,
+    cn_name: string,
     educations?: {
         year: number;
         degree: string;
